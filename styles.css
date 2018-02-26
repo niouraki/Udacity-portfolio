@@ -1,0 +1,118 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("images/landscape-trees-winter-8781.jpg") no-repeat center;
+  background-size: 100% 100%, cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #323031;
+}
+
+/*Header code*/
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titles {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.title-name {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.title-job {
+  text-transform: uppercase;
+}
+
+.fa {
+  margin: 12px;
+  color: #323031;
+}
+
+.fa:hover {
+  color: #ed6a5a;
+}
+
+/*Main page*/
+
+.portfolio-title, .motivational {
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-top: 50px;
+}
+
+.motivational {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/*Images code*/
+
+.first-project, .second-project, .third-project {
+  border: 5px solid #323031;
+  margin-right: 20px;
+}
+
+.fourth-project {
+  border: 5px solid #323031;
+}
+
+.second-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Responsive code*/
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .title-name, .portfolio-title {
+    font-size: 30px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-name, .portfolio-title {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .title-job {
+    text-transform: capitalize;
+  }
+
+  .title-job, .motivational {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
